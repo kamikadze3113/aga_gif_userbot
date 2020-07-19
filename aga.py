@@ -11,4 +11,4 @@ class АгаMod(loader.Module):
 		await message.edit("Ищу...")
 		time.sleep(3)
 		GIF = ["https://i.gifer.com/73H4.gif", "https://i.gifer.com/TfGF.gif", "https://i.gifer.com/Okak.gif", "https://i.gifer.com/7DSA.gif"]
-		await message.send(random.choice(GIF))
+		await message.client.send_document(message.to_id, random.choice(GIF))
